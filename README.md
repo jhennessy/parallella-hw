@@ -33,6 +33,8 @@ fpga/           -  FPGA design files and projects
         parallella_7020_hdmi/     - EDK for hdmi-enabled 7020-based Parallella
         parallella_7010_headless/ - EDK for headless 7010-based Parallella
         parallella_7020_headless/ - EDK for headless 7020-based Parallella
+    edk-vivado/     - PS descriptions for Vivado
+        parallella_7020_headless/ - EDK for headless 7020-based Parallella
     externals/      - Container for external repositories used by our projects
         fpgahdl_xilinx/   - Submodule for HDMI library modules from ADI
     hdl/            - Verilog source files
@@ -51,7 +53,9 @@ fpga/           -  FPGA design files and projects
         parallella_7010_hdmi/
         parallella_7020_headless/
         parallella_7010_headless/
-	vivado_parallella_7010_headless/    - Vivado project (with modifications)
+    projects-vivado/  - Vivado versions of projects
+        parallella_7020_headless/
+
 ```
 
 ## FPGA Project Build instructions

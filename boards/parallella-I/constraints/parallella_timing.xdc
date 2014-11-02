@@ -1,6 +1,7 @@
 ###############################################################
 ##  Timing constraints for the Parallella-I board
 ##  3/12/14 F. Huettig
+##  Updated to XDC format 7/1/14 F. Huettig
 ####
 ## This file defines timing constraints for the Parallella-I
 ##   and Zynq 7010 or 7020.  
@@ -11,24 +12,21 @@
 # Internal constraints
 #######################
 # TX at I/O is TX -FROM- the Epiphany, RX into the FPGA
-#jh NET "TXO_LCLK_P" TNM_NET = "TXO_LCLK_P";
-#jh TIMESPEC "TS_TXO_LCLK_P" = PERIOD "TXO_LCLK_P" 6.66ns HIGH 50% INPUT_JITTER 100ps;
+create_clock -name TXO_LCLK_P -period 6.660 [get_ports TXO_LCLK_P]
+set_input_jitter TXO_LCLK_P 0.100
 
-create_clock -name TS_TXO_LCLK_P -period 6.66 -waveform {0 3.33} [get_ports TXO_LCLK_P]
-set_input_jitter [get_clocks TS_TXO_LCLK_P] 0.1 
+create_clock -name CLK_OUT2 -period 3.330 [get_pins parallella/ewrapper_link_top/io_clock_gen/clkout2_buf/O]
+set_input_jitter CLK_OUT2 0.100
 
-#jh NET "parallella/ewrapper_link_top/io_tx/CLK_IN" TNM_NET = "CLK_IN";
-#jh TIMESPEC "TS_CLK_IN" = PERIOD "CLK_IN" 3.33ns HIGH 50% INPUT_JITTER 100ps;
-create_clock -name CLK_IN -period 3.33 -waveform {0  1.666} [get_pins parallella/ewrapper_link_top/io_tx/CLK_IN]
-set_input_jitter [get_clocks CLK_IN] 0.1
+create_clock -name CLK_OUT4 -period 3.330 [get_pins parallella/ewrapper_link_top/io_clock_gen/clkout4_buf/O]
+set_input_jitter CLK_OUT4 0.100
 
-#jh NET "parallella/ewrapper_link_top/io_tx/CLK_IN_90" TNM_NET = "CLK_FWD_IN";
-#jh TIMESPEC "TS_CLK_FWD_IN" = PERIOD "CLK_FWD_IN" 3.33ns HIGH 50% INPUT_JITTER 100ps;
-create_clock -name CLK_FWD_IN -period 3.33 -waveform {0  1.666} [get_pins parallella/ewrapper_link_top/io_tx/CLK_IN_90]
-set_input_jitter [get_clocks CLK_FWD_IN] 0.1
-
-
-
+# The following cross clock domain false path constraints can be uncommented in order to mimic ucf constraints behavior (see message at the beginning of this file)
+set_false_path -from [get_clocks TXO_LCLK_P] -to [get_clocks [list CLK_OUT2 CLK_OUT4 FCLK_CLK0 FCLK_CLK3]]
+set_false_path -from [get_clocks CLK_OUT2] -to [get_clocks [list TXO_LCLK_P CLK_OUT4 FCLK_CLK0 FCLK_CLK3]]
+set_false_path -from [get_clocks CLK_OUT4] -to [get_clocks [list TXO_LCLK_P CLK_OUT2 FCLK_CLK0 FCLK_CLK3]]
+# set_false_path -from [get_clocks FCLK_CLK0] -to [get_clocks [list TXO_LCLK_P CLK_OUT2 CLK_OUT4 FCLK_CLK3]]
+# set_false_path -from [get_clocks FCLK_CLK3] -to [get_clocks [list TXO_LCLK_P CLK_OUT2 CLK_OUT4 FCLK_CLK0]]
 
 #INST "rst_sync*" ASYNC_REG = TRUE;
 #PIN "CLK_RESET" TIG;
@@ -46,4 +44,3 @@ set_input_jitter [get_clocks CLK_FWD_IN] 0.1
 
 #NET "system_stub/system_i/processing_system7_0/FCLK_CLK0" TNM_NET = clk_fpga_0;
 #TIMESPEC TS_clk_fpga_0 = PERIOD clk_fpga_0 100000 kHz;
-
