@@ -33,8 +33,8 @@ module ewrapper_io_tx_slow
    //###########
    //# INPUTS
    //###########
-   input        CLK_IN;     // Fast clock input from PLL/MMCM
-   input        CLK_IN_90;  // Fast clock input with 90deg phase shift
+   (* dont_touch = "true" *) input        CLK_IN;     // Fast clock input from PLL/MMCM
+   (* dont_touch = "true" *) input        CLK_IN_90;  // Fast clock input with 90deg phase shift
    input        CLK_DIV_IN; // Slow clock input from PLL/MMCM
    input        CLK_RESET;
    input        IO_RESET;

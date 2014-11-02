@@ -146,46 +146,46 @@ module parallella_z7_top (/*AUTO ARG*/
    // Beginning of automatic wires (for undeclared instantiated-module outputs)
    wire			cactive;		// From parallella of parallella.v
    wire			csysack;		// From parallella of parallella.v
-   wire			processing_system7_0_FCLK_CLK0_pin;// From system_stub of system_stub.v
-   wire			processing_system7_0_FCLK_CLK3_pin;// From system_stub of system_stub.v
-   wire [31:0]		processing_system7_0_M_AXI_GP1_ARADDR_pin;// From system_stub of system_stub.v
-   wire [1:0]		processing_system7_0_M_AXI_GP1_ARBURST_pin;// From system_stub of system_stub.v
-   wire [3:0]		processing_system7_0_M_AXI_GP1_ARCACHE_pin;// From system_stub of system_stub.v
-   wire			processing_system7_0_M_AXI_GP1_ARESETN_pin;// From system_stub of system_stub.v
-   wire [11:0]		processing_system7_0_M_AXI_GP1_ARID_pin;// From system_stub of system_stub.v
-   wire [3:0]		processing_system7_0_M_AXI_GP1_ARLEN_pin;// From system_stub of system_stub.v
-   wire [1:0]		processing_system7_0_M_AXI_GP1_ARLOCK_pin;// From system_stub of system_stub.v
-   wire [2:0]		processing_system7_0_M_AXI_GP1_ARPROT_pin;// From system_stub of system_stub.v
-   wire [3:0]		processing_system7_0_M_AXI_GP1_ARQOS_pin;// From system_stub of system_stub.v
-   wire			processing_system7_0_M_AXI_GP1_ARREADY_pin;// From parallella of parallella.v
-   wire [2:0]		processing_system7_0_M_AXI_GP1_ARSIZE_pin;// From system_stub of system_stub.v
-   wire			processing_system7_0_M_AXI_GP1_ARVALID_pin;// From system_stub of system_stub.v
-   wire [31:0]		processing_system7_0_M_AXI_GP1_AWADDR_pin;// From system_stub of system_stub.v
-   wire [1:0]		processing_system7_0_M_AXI_GP1_AWBURST_pin;// From system_stub of system_stub.v
-   wire [3:0]		processing_system7_0_M_AXI_GP1_AWCACHE_pin;// From system_stub of system_stub.v
-   wire [11:0]		processing_system7_0_M_AXI_GP1_AWID_pin;// From system_stub of system_stub.v
-   wire [3:0]		processing_system7_0_M_AXI_GP1_AWLEN_pin;// From system_stub of system_stub.v
-   wire [1:0]		processing_system7_0_M_AXI_GP1_AWLOCK_pin;// From system_stub of system_stub.v
-   wire [2:0]		processing_system7_0_M_AXI_GP1_AWPROT_pin;// From system_stub of system_stub.v
-   wire [3:0]		processing_system7_0_M_AXI_GP1_AWQOS_pin;// From system_stub of system_stub.v
-   wire			processing_system7_0_M_AXI_GP1_AWREADY_pin;// From parallella of parallella.v
-   wire [2:0]		processing_system7_0_M_AXI_GP1_AWSIZE_pin;// From system_stub of system_stub.v
-   wire			processing_system7_0_M_AXI_GP1_AWVALID_pin;// From system_stub of system_stub.v
-   wire [SIDW-1:0]	processing_system7_0_M_AXI_GP1_BID_pin;// From parallella of parallella.v
-   wire			processing_system7_0_M_AXI_GP1_BREADY_pin;// From system_stub of system_stub.v
-   wire [1:0]		processing_system7_0_M_AXI_GP1_BRESP_pin;// From parallella of parallella.v
-   wire			processing_system7_0_M_AXI_GP1_BVALID_pin;// From parallella of parallella.v
-   wire [SDW-1:0]	processing_system7_0_M_AXI_GP1_RDATA_pin;// From parallella of parallella.v
-   wire [SIDW-1:0]	processing_system7_0_M_AXI_GP1_RID_pin;// From parallella of parallella.v
-   wire			processing_system7_0_M_AXI_GP1_RLAST_pin;// From parallella of parallella.v
-   wire			processing_system7_0_M_AXI_GP1_RREADY_pin;// From system_stub of system_stub.v
-   wire [1:0]		processing_system7_0_M_AXI_GP1_RRESP_pin;// From parallella of parallella.v
-   wire			processing_system7_0_M_AXI_GP1_RVALID_pin;// From parallella of parallella.v
-   wire [31:0]		processing_system7_0_M_AXI_GP1_WDATA_pin;// From system_stub of system_stub.v
-   wire [11:0]		processing_system7_0_M_AXI_GP1_WID_pin;// From system_stub of system_stub.v
-   wire			processing_system7_0_M_AXI_GP1_WLAST_pin;// From system_stub of system_stub.v
-   wire			processing_system7_0_M_AXI_GP1_WREADY_pin;// From parallella of parallella.v
-   wire [3:0]		processing_system7_0_M_AXI_GP1_WSTRB_pin;// From system_stub of system_stub.v
+   wire			      processing_system7_0_FCLK_CLK0_pin;// From system_stub of system_stub.v
+   wire			      processing_system7_0_FCLK_CLK3_pin;// From system_stub of system_stub.v
+   wire [31:0]	      processing_system7_0_M_AXI_GP1_ARADDR_pin;// From system_stub of system_stub.v
+   wire [1:0]	      processing_system7_0_M_AXI_GP1_ARBURST_pin;// From system_stub of system_stub.v
+   wire [3:0]	      processing_system7_0_M_AXI_GP1_ARCACHE_pin;// From system_stub of system_stub.v
+   wire			      processing_system7_0_M_AXI_GP1_ARESETN_pin;// From system_stub of system_stub.v
+   wire [11:0]	      processing_system7_0_M_AXI_GP1_ARID_pin;// From system_stub of system_stub.v
+   wire [3:0]	      processing_system7_0_M_AXI_GP1_ARLEN_pin;// From system_stub of system_stub.v
+   wire [1:0]	      processing_system7_0_M_AXI_GP1_ARLOCK_pin;// From system_stub of system_stub.v
+   wire [2:0]	      processing_system7_0_M_AXI_GP1_ARPROT_pin;// From system_stub of system_stub.v
+   wire [3:0]	      processing_system7_0_M_AXI_GP1_ARQOS_pin;// From system_stub of system_stub.v
+   wire			      processing_system7_0_M_AXI_GP1_ARREADY_pin;// From parallella of parallella.v
+   wire [2:0]	      processing_system7_0_M_AXI_GP1_ARSIZE_pin;// From system_stub of system_stub.v
+   wire			      processing_system7_0_M_AXI_GP1_ARVALID_pin;// From system_stub of system_stub.v
+   wire [31:0]	      processing_system7_0_M_AXI_GP1_AWADDR_pin;// From system_stub of system_stub.v
+   wire [1:0]	      processing_system7_0_M_AXI_GP1_AWBURST_pin;// From system_stub of system_stub.v
+   wire [3:0]	      processing_system7_0_M_AXI_GP1_AWCACHE_pin;// From system_stub of system_stub.v
+   wire [11:0]	      processing_system7_0_M_AXI_GP1_AWID_pin;// From system_stub of system_stub.v
+   wire [3:0]	      processing_system7_0_M_AXI_GP1_AWLEN_pin;// From system_stub of system_stub.v
+   wire [1:0]	      processing_system7_0_M_AXI_GP1_AWLOCK_pin;// From system_stub of system_stub.v
+   wire [2:0]	      processing_system7_0_M_AXI_GP1_AWPROT_pin;// From system_stub of system_stub.v
+   wire [3:0]	      processing_system7_0_M_AXI_GP1_AWQOS_pin;// From system_stub of system_stub.v
+   wire			      processing_system7_0_M_AXI_GP1_AWREADY_pin;// From parallella of parallella.v
+   wire [2:0]	      processing_system7_0_M_AXI_GP1_AWSIZE_pin;// From system_stub of system_stub.v
+   wire			      processing_system7_0_M_AXI_GP1_AWVALID_pin;// From system_stub of system_stub.v
+   wire [SIDW-1:0]	  processing_system7_0_M_AXI_GP1_BID_pin;// From parallella of parallella.v
+   wire			      processing_system7_0_M_AXI_GP1_BREADY_pin;// From system_stub of system_stub.v
+   wire [1:0]		  processing_system7_0_M_AXI_GP1_BRESP_pin;// From parallella of parallella.v
+   wire			      processing_system7_0_M_AXI_GP1_BVALID_pin;// From parallella of parallella.v
+   wire [SDW-1:0]	  processing_system7_0_M_AXI_GP1_RDATA_pin;// From parallella of parallella.v
+   wire [SIDW-1:0]	  processing_system7_0_M_AXI_GP1_RID_pin;// From parallella of parallella.v
+   wire			      processing_system7_0_M_AXI_GP1_RLAST_pin;// From parallella of parallella.v
+   wire			      processing_system7_0_M_AXI_GP1_RREADY_pin;// From system_stub of system_stub.v
+   wire [1:0]		  processing_system7_0_M_AXI_GP1_RRESP_pin;// From parallella of parallella.v
+   wire			      processing_system7_0_M_AXI_GP1_RVALID_pin;// From parallella of parallella.v
+   wire [31:0]		  processing_system7_0_M_AXI_GP1_WDATA_pin;// From system_stub of system_stub.v
+   wire [11:0]		  processing_system7_0_M_AXI_GP1_WID_pin;// From system_stub of system_stub.v
+   wire			      processing_system7_0_M_AXI_GP1_WLAST_pin;// From system_stub of system_stub.v
+   wire			      processing_system7_0_M_AXI_GP1_WREADY_pin;// From parallella of parallella.v
+   wire [3:0]		 processing_system7_0_M_AXI_GP1_WSTRB_pin;// From system_stub of system_stub.v
    wire			processing_system7_0_M_AXI_GP1_WVALID_pin;// From system_stub of system_stub.v
    wire [MAW-1:0]	processing_system7_0_S_AXI_HP1_ARADDR_pin;// From parallella of parallella.v
    wire [1:0]		processing_system7_0_S_AXI_HP1_ARBURST_pin;// From parallella of parallella.v
@@ -445,14 +445,14 @@ module parallella_z7_top (/*AUTO ARG*/
 			 .emaxi_awprot		(processing_system7_0_S_AXI_HP1_AWPROT_pin[2:0]), // Templated
 			 .emaxi_awvalid		(processing_system7_0_S_AXI_HP1_AWVALID_pin), // Templated
 			 .esaxi_awready		(processing_system7_0_M_AXI_GP1_AWREADY_pin), // Templated
-			 .emaxi_wid		(processing_system7_0_S_AXI_HP1_WID_pin[MIDW-1:0]), // Templated
+			 .emaxi_wid		    (processing_system7_0_S_AXI_HP1_WID_pin[MIDW-1:0]), // Templated
 			 .emaxi_wdata		(processing_system7_0_S_AXI_HP1_WDATA_pin[MDW-1:0]), // Templated
 			 .emaxi_wstrb		(processing_system7_0_S_AXI_HP1_WSTRB_pin[STW-1:0]), // Templated
 			 .emaxi_wlast		(processing_system7_0_S_AXI_HP1_WLAST_pin), // Templated
 			 .emaxi_wvalid		(processing_system7_0_S_AXI_HP1_WVALID_pin), // Templated
 			 .esaxi_wready		(processing_system7_0_M_AXI_GP1_WREADY_pin), // Templated
 			 .emaxi_bready		(processing_system7_0_S_AXI_HP1_BREADY_pin), // Templated
-			 .esaxi_bid		(processing_system7_0_M_AXI_GP1_BID_pin[SIDW-1:0]), // Templated
+			 .esaxi_bid		    (processing_system7_0_M_AXI_GP1_BID_pin[SIDW-1:0]), // Templated
 			 .esaxi_bresp		(processing_system7_0_M_AXI_GP1_BRESP_pin[1:0]), // Templated
 			 .esaxi_bvalid		(processing_system7_0_M_AXI_GP1_BVALID_pin), // Templated
 			 .emaxi_arid		(processing_system7_0_S_AXI_HP1_ARID_pin[MIDW-1:0]), // Templated
@@ -466,7 +466,7 @@ module parallella_z7_top (/*AUTO ARG*/
 			 .emaxi_arvalid		(processing_system7_0_S_AXI_HP1_ARVALID_pin), // Templated
 			 .esaxi_arready		(processing_system7_0_M_AXI_GP1_ARREADY_pin), // Templated
 			 .emaxi_rready		(processing_system7_0_S_AXI_HP1_RREADY_pin), // Templated
-			 .esaxi_rid		(processing_system7_0_M_AXI_GP1_RID_pin[SIDW-1:0]), // Templated
+			 .esaxi_rid		    (processing_system7_0_M_AXI_GP1_RID_pin[SIDW-1:0]), // Templated
 			 .esaxi_rdata		(processing_system7_0_M_AXI_GP1_RDATA_pin[SDW-1:0]), // Templated
 			 .esaxi_rresp		(processing_system7_0_M_AXI_GP1_RRESP_pin[1:0]), // Templated
 			 .esaxi_rlast		(processing_system7_0_M_AXI_GP1_RLAST_pin), // Templated
@@ -474,13 +474,13 @@ module parallella_z7_top (/*AUTO ARG*/
 			 .emaxi_awqos		(processing_system7_0_S_AXI_HP1_AWQOS_pin[3:0]), // Templated
 			 .emaxi_arqos		(processing_system7_0_S_AXI_HP1_ARQOS_pin[3:0]), // Templated
 			 // Inputs
-			 .clkin_100		(processing_system7_0_FCLK_CLK0_pin), // Templated
+			 .clkin_100		    (processing_system7_0_FCLK_CLK0_pin), // Templated
 			 .esaxi_aclk		(processing_system7_0_FCLK_CLK3_pin), // Templated
 			 .emaxi_aclk		(processing_system7_0_FCLK_CLK3_pin), // Templated
-			 .reset			(fpga_reset),	 // Templated
+			 .reset			    (fpga_reset),	 // Templated
 			 .esaxi_aresetn		(processing_system7_0_M_AXI_GP1_ARESETN_pin), // Templated
 			 .emaxi_aresetn		(processing_system7_0_S_AXI_HP1_ARESETN_pin), // Templated
-			 .csysreq		(1'b0),		 // Templated
+			 .csysreq		    (1'b0),		 // Templated
 			 .rxi_data_p		(rxi_data_p[7:0]),
 			 .rxi_data_n		(rxi_data_n[7:0]),
 			 .rxi_frame_p		(rxi_frame_p),
@@ -502,12 +502,12 @@ module parallella_z7_top (/*AUTO ARG*/
 			 .esaxi_awprot		(processing_system7_0_M_AXI_GP1_AWPROT_pin[2:0]), // Templated
 			 .esaxi_awvalid		(processing_system7_0_M_AXI_GP1_AWVALID_pin), // Templated
 			 .emaxi_wready		(processing_system7_0_S_AXI_HP1_WREADY_pin), // Templated
-			 .esaxi_wid		(processing_system7_0_M_AXI_GP1_WID_pin[SIDW-1:0]), // Templated
+			 .esaxi_wid		    (processing_system7_0_M_AXI_GP1_WID_pin[SIDW-1:0]), // Templated
 			 .esaxi_wdata		(processing_system7_0_M_AXI_GP1_WDATA_pin[SDW-1:0]), // Templated
 			 .esaxi_wstrb		(processing_system7_0_M_AXI_GP1_WSTRB_pin[3:0]), // Templated
 			 .esaxi_wlast		(processing_system7_0_M_AXI_GP1_WLAST_pin), // Templated
 			 .esaxi_wvalid		(processing_system7_0_M_AXI_GP1_WVALID_pin), // Templated
-			 .emaxi_bid		(processing_system7_0_S_AXI_HP1_BID_pin[MIDW-1:0]), // Templated
+			 .emaxi_bid		    (processing_system7_0_S_AXI_HP1_BID_pin[MIDW-1:0]), // Templated
 			 .emaxi_bresp		(processing_system7_0_S_AXI_HP1_BRESP_pin[1:0]), // Templated
 			 .emaxi_bvalid		(processing_system7_0_S_AXI_HP1_BVALID_pin), // Templated
 			 .esaxi_bready		(processing_system7_0_M_AXI_GP1_BREADY_pin), // Templated
@@ -521,7 +521,7 @@ module parallella_z7_top (/*AUTO ARG*/
 			 .esaxi_arcache		(processing_system7_0_M_AXI_GP1_ARCACHE_pin[3:0]), // Templated
 			 .esaxi_arprot		(processing_system7_0_M_AXI_GP1_ARPROT_pin[2:0]), // Templated
 			 .esaxi_arvalid		(processing_system7_0_M_AXI_GP1_ARVALID_pin), // Templated
-			 .emaxi_rid		(processing_system7_0_S_AXI_HP1_RID_pin[MIDW-1:0]), // Templated
+			 .emaxi_rid		    (processing_system7_0_S_AXI_HP1_RID_pin[MIDW-1:0]), // Templated
 			 .emaxi_rdata		(processing_system7_0_S_AXI_HP1_RDATA_pin[MDW-1:0]), // Templated
 			 .emaxi_rresp		(processing_system7_0_S_AXI_HP1_RRESP_pin[1:0]), // Templated
 			 .emaxi_rlast		(processing_system7_0_S_AXI_HP1_RLAST_pin), // Templated
@@ -537,8 +537,12 @@ module parallella_z7_top (/*AUTO ARG*/
    system_stub system_stub(
 			   .processing_system7_0_M_AXI_GP1_ACLK_pin(processing_system7_0_FCLK_CLK3_pin),
 			   .processing_system7_0_S_AXI_HP1_ACLK_pin(processing_system7_0_FCLK_CLK3_pin),
-			   .processing_system7_0_I2C0_SCL_pin(PS_I2C_SCL),
-			   .processing_system7_0_I2C0_SDA_pin(PS_I2C_SDA),
+			   .processing_system7_0_I2C0_SCL_I_pin(PS_I2C_SCL),
+			   .processing_system7_0_I2C0_SCL_O_pin(),
+			   .processing_system7_0_I2C0_SCL_T_pin(),
+			   .processing_system7_0_I2C0_SDA_I_pin(PS_I2C_SDA),
+			   .processing_system7_0_I2C0_SDA_O_pin(),
+			   .processing_system7_0_I2C0_SDA_T_pin(),
 `ifdef FEATURE_HDMI
 			   .hdmi_clk(hdmi_clk),
                .hdmi_data(hdmi_data),
