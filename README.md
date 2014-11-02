@@ -51,6 +51,7 @@ fpga/           -  FPGA design files and projects
         parallella_7010_hdmi/
         parallella_7020_headless/
         parallella_7010_headless/
+	vivado_parallella_7010_headless/    - Vivado project (with modifications)
 ```
 
 ## FPGA Project Build instructions
